@@ -2,11 +2,13 @@ package main
 
 import "fmt"
 
+// How to set constants
+const a string = "hello world!"
+
 func main() {
-	// How to set variables
-	var a = "hello world!"
 	fmt.Println(a)
 
+	// How to set Variables
 	var b int = 1
 	fmt.Println(b)
 
@@ -16,7 +18,7 @@ func main() {
 	var d int
 	fmt.Println(d)
 
-	// using shorthand for declaring and initializing a variable
+	// Using shorthand for declaring and initializing a variable
 	e := "hello world!"
 	fmt.Println(e)
 
