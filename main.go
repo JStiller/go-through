@@ -9,16 +9,19 @@ func main() {
 	fmt.Println(a)
 
 	// How to set Variables
-	var b int = 1
+	var b [10]int
 	fmt.Println(b)
 
 	// Writing an for loop with by using an shorthand for n
-	for n := 0; n <= 5; n++ {
+	for n := 0; n < 10; n++ {
+		b[n] = n
 		switch {
-		case n%2 == 0:
-			fmt.Println(n, "is even")
+		case b[n]%2 == 0:
+			fmt.Println(b[n], "is even")
 		default:
-			fmt.Println(n, "is odd")
+			fmt.Println(b[n], "is odd")
 		}
 	}
+
+	fmt.Println(b)
 }
